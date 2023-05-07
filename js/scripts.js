@@ -5,6 +5,7 @@ let leftBtn=document.querySelector(".leftBtn");
 let slideIndex=1;
 showSlide(slideIndex);
 
+/**Carousel/Slider functionality code */
 rightBtn.addEventListener("click",next);
 function next(n){
     n=1

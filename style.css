@@ -160,7 +160,8 @@ button:focus {
   }
 }
 
-@media (width<35em) {
+/*Mobile Screen*/
+@media (width<40em) {
   .note-h2,
   .note-p,
   .shop {
@@ -213,6 +214,7 @@ button:focus {
   .carousel-container {
     width: 100%;
     position: relative;
+    
   }
   .carousel__img {
     display: none;
@@ -232,7 +234,7 @@ button:focus {
   }
   .note-h2 {
     width: 75%;
-    padding-bottom: 0.5em;
+    padding: 0.5em 0;
   }
   .note-p {
     width: 100%;
@@ -246,9 +248,10 @@ button:focus {
     width: 70%;
   }
   .button__container {
-    left: 0;
-    transform: translate(15em, -4.7em);
-    position: sticky;
+    left:initial;
+    bottom: initial;
+    top: -3.7em;
+    right: 0;
   }
   button {
     padding: 1em;
@@ -257,4 +260,71 @@ button:focus {
     width: 100%;
     padding: 1em;
   }
+}
+
+/*Tablet Screen*/
+@media (width>40em) and (width <1200px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .carousel-container{
+        width: 100%;
+        
+    }
+    .about{
+        padding: 1.5em;
+    }
+    .note-h2,.note-p,.shop{
+        position: initial;
+    
+    }
+    .note-h2,.note-p{
+        width: 90%;
+
+    }
+    .note-h2{
+        padding-bottom: .5em;
+    }
+   .note-p,.note-about p{
+    font-size: 1.2em;
+   }
+   .shop{
+    transform: translateX(-2em);
+   }
+   .note-about{
+    width: 100%;
+    padding: 1.5em;
+   }
+
+    .button__container {
+        left:initial;
+        bottom: initial;
+        top: -5.3em;
+        right: 0;
+        width: 30%;
+      }
+      button{
+        padding: 2em 4em;
+      }
+}
+
+@media (width>1200px) and (width<1300px)  {
+    .note-h2,.note-p,.shop{
+        position: initial;
+    }
+    .note-h2{
+        width: 80%;
+    }
+    .shop{
+        transform: translateX(-2em);
+    }
+    .button__container{
+        width: 30%;
+        left: -8em;
+    }
+    .note-about{
+        width: 100%;
+        padding: 1em;
+    }
 }
